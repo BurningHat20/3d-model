@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
+    /* background-color: #f4f4f4; */
+    color: #333;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    position: relative;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: #fff;
+    z-index: 1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+spline-viewer {
+    width: 100%;
+    height: 100%;
+    pointer-events: auto; /* Ensure the Spline viewer is interactive */
+}
+
+nav {
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    padding: 1rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; /* Ensure the navbar is above the background */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 2rem;
+    z-index: 5; /* Ensure the container is above the background but below the navbar */
+    position: relative;
+}
+
+.content {
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+}
